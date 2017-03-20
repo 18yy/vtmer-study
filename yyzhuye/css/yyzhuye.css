@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: rgb(16,85,106)
+}
+/*头部*/
+#head{
+    height:260px;
+    overflow: hidden;
+    background-image: url(imags/1.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 300%;
+  
+}
+/*包裹头部文字和导航的包裹层*/
+#wrap{
+    width:500px;
+    margin: 100px auto;
+   
+   }
+#head h1{
+    color:rgb(213,172,94);
+    font-family:Arial;
+}
+ul{
+    list-style: none;
+
+}
+ul li{
+    float:left;
+    line-height: 40px;
+    padding-top: 5px;
+    padding-right: 20px;
+    font-family: 微软雅黑；
+
+}
+#top{
+    height:50px;
+    width:500px;
+}
+a:link,a:visited{color:rgb(252,170,95);
+                 text-decoration:none;}
+a:hover,a:active{color:gray;
+                text-decoration:none;}
+/*主体包括左边和右边*/
+#main{
+    width:980px;
+    margin:0 auto;
+
+}
+
+#left{
+    width:290px;
+    height:490px;
+    position: absolute;
+    background: rgb(240,235,223);
+    border: 1px solid rgb(0,60,100);
+}
+#right{
+    width:680px;
+    height:auto;
+    margin-left:300px; 
+    border: 1px solid rgb(0,60,100);
+}
+#left img{
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 1px solid rgb(16,85,106);
+}
+#left .top1{
+    width:290px;
+    height:25px;
+    background:rgb(212,170,100);
+   }
+
+#right .top2{
+    width:680px;
+    height:25px;
+    background:rgb(212,170,100);
+}
+span{
+    font-size:13px;
+    padding-left: 10px;
+    font-weight: bold;
+    color:rgb(16,85,106);
+    line-height:25px;
+}
+p{
+    text-align: center;
+    font-family：微软雅黑；
+    font-size: 50px;
+    color:rgb(16,85,106);
+    font-weight: bold;
+    margin-top:10px;
+}
+input[name="left"]{
+    margin-top:20px;
+    margin-left: 70px;
+    padding:5px;
+}
+input[name="right"]{
+    margin-top:20px;
+    margin-left:25px;
+    padding:5px;
+}
+input{
+    background: rgb(212,170,100);
+}
+a.a1:link,a.a1:visited{color:rgb(27,106,132);;
+                 text-decoration:none;}
+a.a1:hover,a.a1:active{
+                    color:rgb(0,138,212);
+                text-decoration:underline; }
+/*博文*/
+.txt{
+    padding: 20px;
+    background: rgb(240,235,223);
+}
+h3{
+    font-family:微软雅黑;
+    
+}
+.txt img{
+    margin: 25px 50px;
+}
+.txt p{
+    text-align: left;
+    line-height:20px;
+    padding: 10px; 
+}
