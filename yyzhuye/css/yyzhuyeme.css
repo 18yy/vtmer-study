@@ -1,3 +1,9 @@
+/* 
+* @Author: anchen
+* @Date:   2017-03-21 22:52:45
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-21 23:15:44
+*/
 *{
     margin:0;
     padding:0;
@@ -53,7 +59,7 @@ a:hover,a:active{color:gray;
 
 #left{
     width:290px;
-    height:490px;
+    height:370px;
     position: absolute;
     background: rgb(240,235,223);
     border: 1px solid rgb(0,60,100);
@@ -95,37 +101,18 @@ p{
     font-weight: bold;
     margin-top:10px;
 }
- input[name="left"]{
-    margin-top:20px;
-    margin-left: 70px;
-    padding:5px;
-}
-input[name="right"]{
-    margin-top:20px;
-    margin-left:25px;
-    padding:5px;
-} 
 
-input{
-    background: rgb(212,170,100);
-}
-a.a1:link,a.a1:visited{color:rgb(27,106,132);;
-                 text-decoration:none;}
-a.a1:hover,a.a1:active{
-                    color:rgb(0,138,212);
-                text-decoration:underline; }
-/*博文*/
+
 .txt{
     padding: 20px;
     background: rgb(240,235,223);
 }
 h3{
     font-family:微软雅黑;
+    margin: 5px;
     
 }
-.txt img{
-    margin: 25px 50px;
-}
+
 .txt p{
     text-align: left;
     line-height:20px;

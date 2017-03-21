@@ -28,7 +28,7 @@ ul{
     list-style: none;
 
 }
-ul li{
+ul  li{
     float:left;
     line-height: 40px;
     padding-top: 5px;
@@ -52,31 +52,27 @@ a:hover,a:active{color:gray;
 }
 
 #left{
-    width:290px;
-    height:490px;
+    width:220px;
+    height:540px;
     position: absolute;
     background: rgb(240,235,223);
     border: 1px solid rgb(0,60,100);
 }
 #right{
-    width:680px;
-    height:auto;
-    margin-left:300px; 
+    width:750px;
+    height:350px;
+    margin-left:230px; 
     border: 1px solid rgb(0,60,100);
+    background: rgb(240,235,223);
 }
-#left img{
-    margin-left: 20px;
-    margin-top: 15px;
-    border: 1px solid rgb(16,85,106);
-}
-#left .top1{
-    width:290px;
+.top1{
+    width:220px;
     height:25px;
     background:rgb(212,170,100);
    }
 
-#right .top2{
-    width:680px;
+.top2{
+    width:750px;
     height:25px;
     background:rgb(212,170,100);
 }
@@ -95,39 +91,15 @@ p{
     font-weight: bold;
     margin-top:10px;
 }
- input[name="left"]{
-    margin-top:20px;
-    margin-left: 70px;
-    padding:5px;
-}
-input[name="right"]{
-    margin-top:20px;
-    margin-left:25px;
-    padding:5px;
-} 
-
-input{
-    background: rgb(212,170,100);
-}
-a.a1:link,a.a1:visited{color:rgb(27,106,132);;
-                 text-decoration:none;}
-a.a1:hover,a.a1:active{
-                    color:rgb(0,138,212);
-                text-decoration:underline; }
-/*博文*/
-.txt{
-    padding: 20px;
-    background: rgb(240,235,223);
-}
-h3{
-    font-family:微软雅黑;
-    
-}
-.txt img{
-    margin: 25px 50px;
-}
-.txt p{
-    text-align: left;
-    line-height:20px;
-    padding: 10px; 
+#right img{
+    border:1px solid rgb(16,85,130);
+    padding:1px;
+    margin:40px 20px;
+    background:rgb(16,85,106);
+ }
+#left img{
+    border:1px solid rgb(16,85,106);
+    padding:3px 3px 20px 3px;
+    margin:40px 30px 0;
+    background:white ;
 }
