@@ -1,0 +1,65 @@
+/* 
+* @Author: anchen
+* @Date:   2017-03-24 16:45:28
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-03-24 21:21:27
+*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+     background: #f6f9fc;
+     font-family: Arial;
+}
+.wrap{
+    width:220px;
+    margin:50px auto;
+    padding:15px 10px 20px 20px;
+     background: rgb(240,235,223);
+}
+.wrap ul li{
+    float:left;
+    list-style:none;
+    width:54px;
+    height:54px;
+    border:1px solid black;
+    margin:10px 15px 0 3px;
+    text-align: center;
+    background:rgb(0,60,100);
+    color: #fff;
+    cursor: pointer;
+}
+.wrap ul{
+    width:220px;
+    overflow: hidden;
+    padding-bottom:10px; 
+}
+.wrap li p{
+    font-size:14px;
+}
+.wrap li h2{
+    font-size:20px;
+    padding-top:10px;
+}
+.text{
+    width:178px;
+    border: 1px solid #fff;
+    padding:10px;
+    background: #f6f9fc;
+
+}
+.text h2{
+    font-size: 12px;
+}
+.text p{
+    font-size: 14px;
+}
+.wrap .active {
+    border: 1px solid  rgb(212,170,100);
+     background: #fff; 
+     color: #e84a7e; 
+ }
+.wrap .active h2{
+
+}

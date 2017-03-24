@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>选项卡</title>
+        <style type="text/css" media="screen">
+            #div2{
+                width:150px;
+                height:200px;
+        		background: yellow;
+                border: 1px solid black;
+                display: none;
+               }
+            .active{
+                background:red;
+            }
+        </style>
+        <script type="text/javascript">
+        	window.onload=function(){
+        		var oDiv=document.getElementById('div1');
+                var aBtn=oDiv.getElementsByTagName('input');
+                var aDiv=oDiv.getElementsByTagName('div');
+                for(var i=0;i<aBtn.length;i++){
+                    aBtn[i].index=i;  //面向对象时会讲
+                    aBtn[i].onclick=function(){
+                        for(var i=0;i<aBtn.length;i++){
+                            aBtn[i].className='';
+                            aDiv[i].style.display='none';
+
+                        }                                //先把样式清空
+                        this.className='active';
+                        aDiv[this.index].style.display='block';
+
+
+
+                    }
+
+                }
+
+
+
+
+        	}
+        </script>
+        
+    </head>
+    <body>
+    	<div id="div1">
+
+	       <input class="active" type="button" name="" value="hh1">
+	       <input type="button" name="" value="hh2">
+	       <input type="button" name="" value="hh3">
+	       <div id="div2" style="display:block;">111</div>
+	       <div id="div2">222</div>
+	       <div id="div2">333</div>
+
+	    </div>
+    </body>
+</html>

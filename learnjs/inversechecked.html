@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script>
+            window.onload=function(){
+                 var   oBtn=document.getElementById('btn');
+                 var   oDiv=document.getElementById('div1');
+                 var   aInpt=oDiv.getElementsByTagName('input');
+                 oBtn.onclick=function(){
+                    for(var i=0;i<aInpt.length;i++){
+                        if(aInpt[i].checked==true){
+
+                            aInpt[i].checked=false;
+                        }
+                        else{
+                            aInpt[i].checked=true;
+                        }
+                    }
+                 }
+
+
+            };
+
+        </script>
+    </head>
+    <body>
+        <input id="btn" type="button" value="反选"/>
+        <div id="div1">
+            <input type="checkbox" name="" value="">
+            <input type="checkbox" name="" value="">
+            <input type="checkbox" name="" value="">
+            <input type="checkbox" name="" value="">
+            <input type="checkbox" name="" value="">
+        </div>
+    </body>
+</html>
