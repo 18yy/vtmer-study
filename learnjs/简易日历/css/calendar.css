@@ -2,7 +2,7 @@
 * @Author: anchen
 * @Date:   2017-03-24 16:45:28
 * @Last Modified by:   anchen
-* @Last Modified time: 2017-03-24 21:21:27
+* @Last Modified time: 2017-03-24 23:15:06
 */
 *{
     margin:0;
@@ -24,7 +24,7 @@ body{
     width:54px;
     height:54px;
     border:1px solid black;
-    margin:10px 15px 0 3px;
+    margin:7px 7px;
     text-align: center;
     background:rgb(0,60,100);
     color: #fff;
