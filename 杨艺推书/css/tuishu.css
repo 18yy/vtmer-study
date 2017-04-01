@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin:0;
+}
+#homepage{
+    height:864px;
+    width:100%;
+    background-image: url(img/bg.jpg);
+    background-repeat:no-repeat;
+    
+
+}
+.homepageLogin{
+    position:absolute;
+    top:41px; 
+    left:1192px;
+   }
+.homepageLogo{
+     position: absolute;
+    left: 503px;
+    top: 262px;
+
+}
+.homepageLogo p{
+    padding-left:19px; 
+    font-size:20px;
+    font-family: 微软雅黑;
+    color: rgb(123,117,105);
+}
+.txtInput {
+    height: 52px;
+    width: 390px;
+    margin-left:445px;
+    margin-top:485px;
+    font-size: 25.97px;
+    font-family:Adobe 黑体 Std;
+    color: rgb(109,111,115);
+    padding-left:35px;
+    border: 1px solid rgb(218,218,218);
+    border-radius:25px;
+    box-shadow: 5px 5px 10px 3px rgb(224,228,229),-0.8px -0.5px 3px 0.1px rgb(224,228,229);
+}
+input:focus{
+    outline: none;
+}
+.homepageSearch{
+    position: absolute;
+    left:820px;
+    top: 498px;
+}
+.homepageType div{
+    float:left;
+    width:67px;
+    height: 20px;
+    border: 1.5px solid rgb(166,164,164);
+    background: rgb(240,241,241);
+    border-radius: 25px;
+    margin-right: 6px;
+    font-family:微软雅黑;
+    font-size:17.17px;
+    text-align:center;
+    line-height:20px; 
+    color:rgb(75,76,77);
+    box-shadow:2px 2px 5px rgb(224,228,229) ;
+
+
+}
+.homepageType div:hover{
+    background: rgb(141,144,144);
+    color:rgb(234,234,237);
+    border: 1.2px solid rgb(244,226,226);
+    box-shadow:2px 2px 5px rgb(224,228,229) ;
+    border: 1.5px solid rgb(234,234,237);
+
+}
+.homepageType{
+    margin-top: 27px;
+    margin-left:497px;
+
+}
+.homepageLoginBox{
+    width: 660px;
+    height: 450px;
+    z-index:999;
+    position: absolute;
+    left: 311px;
+    top: 181px;
+    background:url(img/登录框背景2.png);
+    border: 2px solid rgb(93,91,89);
+}
+.homepageLoginBox img[alt="close"]{
+    margin-top:16px;
+    margin-left: 615px;  
+}
+.homepageLoginBox img[alt="logo"]{
+    margin-top:0px;
+    margin-left:250px;  
+}
+/*4.1
+主页静态
+登陆框未完
+*/
