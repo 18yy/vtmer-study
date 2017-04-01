@@ -1,0 +1,122 @@
+div{
+    width:100px;
+    height:100px;
+    background: pink;
+    position: relative;
+    top:50px;
+    left:0px;
+    -webkit-animation:mymove 6s 2;
+     animation:mymove 6s 2;
+     animation-timing-function:ease;
+     -webkit-animation-timing-function:ease;
+     animation-delay:0.5s;
+     -webkit-animation-delay:0.5s;
+     animation-direction:alternate;
+     -webkit-animation-direction:alternate;
+
+
+
+ }
+ @keyframes mymove{
+ 0%{background:pink;
+     top:50px;
+     left:0px;
+     transform:rotate(0deg);
+     border-radius: 0px;
+     -webkit-transform:rotate(0deg);
+     -webkit-border-radius: 0px;
+ }
+ 25%{
+     background: yellow;
+     top:50px;
+     left:300px;
+     transform:rotate(70deg);
+      border-radius: 5px;
+      -webkit-transform:rotate(70deg);
+      -webkit-border-radius: 5px;
+
+ }
+ 50%{
+     background: green;
+     top:50px;
+     left:500px;
+     transform:rotate(90deg);
+     border-radius: 10px;
+     -webkit-transform:rotate(90deg);
+     -webkit-border-radius: 10px;
+
+ }
+ 75%{
+    background: blue;
+    top:50px;
+    left:700;
+    transform:rotate(170deg);
+     border-radius: 30px;
+     -webkit-transform:rotate(170deg);
+     -webkit-border-radius: 30px;
+    
+ }
+
+ 100%{
+     background: red;
+     top:50px;
+     left:800px;
+     transform:rotate(0deg);
+      border-radius:60px;
+      -webkit-transform:rotate(0deg);
+      -webkit-border-radius:60px;
+
+ }
+ }
+ @-webkit-keyframes mymove{
+ 0%{background:pink;
+     top:50px;
+     left:0px;
+     transform:rotate(0deg);
+     border-radius: 0px;
+     -webkit-transform:rotate(0deg);
+     -webkit-border-radius: 0px;
+ }
+ 25%{
+     background: yellow;
+     top:50px;
+     left:300px;
+     transform:rotate(70deg);
+      border-radius: 5px;
+      -webkit-transform:rotate(70deg);
+      -webkit-border-radius: 5px;
+
+ }
+ 50%{
+     background: green;
+     top:50px;
+     left:500px;
+     transform:rotate(90deg);
+     border-radius: 10px;
+     -webkit-transform:rotate(90deg);
+     -webkit-border-radius: 10px;
+
+ }
+ 75%{
+    background: blue;
+    top:50px;
+    left:700;
+    transform:rotate(170deg);
+     border-radius: 30px;
+     -webkit-transform:rotate(170deg);
+     -webkit-border-radius: 30px;
+    
+ }
+
+ 100%{
+     background: red;
+     top:50px;
+     left:800px;
+     transform:rotate(0deg);
+      border-radius:60px;
+      -webkit-transform:rotate(0deg);
+      -webkit-border-radius:60px;
+
+ }
+ }
+ 
