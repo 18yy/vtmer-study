@@ -3,6 +3,7 @@ window.onload=function(){
     var aInput=document.getElementsByTagName('input');
     var oInputSearch=aInput[0];
     var oInputUsername=aInput[1];
+    var oInputButton=aInput[3];
 
     var oLogin=document.getElementById('homepageLogin');
     var oClose=document.getElementById('homepageLoginClose');
@@ -50,11 +51,7 @@ window.onload=function(){
     密码点变星号？
     */
 
-
-
-
-
-
+   
 
 
 
