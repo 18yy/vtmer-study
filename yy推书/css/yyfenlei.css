@@ -1,0 +1,274 @@
+*{
+    padding:0;
+    margin:0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    min-width: 901px;
+
+}
+body{
+   background: rgb(244,244,244);
+   
+}
+#typepageHead{
+    background: rgb(255,255,255);
+    width: 100%;
+    height: 54px;
+    position:fixed;
+    z-index:9;
+    top:0;
+    box-shadow: 5px 5px 9px 2px rgb(195,195,195);
+
+}
+#typepageHead img{
+    position: absolute;
+    top:50%;
+    left: 20%;
+    margin:-18px 0 0 -36px;
+}
+#typepageHead div{
+    display: inline-block;
+    
+}
+/*小搜索框*/
+/* #typepageHead input{
+    width:260pxw
+    height: 26pxv
+    border: 1px solid rgb(166,166,166)u
+    border-radius: 25pxt
+    background: rgb(252,252,252)s
+     position: absoluter
+    top:50%q
+    left:80%p
+    margin:-13px 0 0 -130pxo
+} */
+.typepageHeadInputBox{
+    width:260px;
+    height: 26px;
+    border: 1px solid rgb(166,166,166);
+    border-radius: 25px;
+    background: rgb(252,252,252);
+    position: absolute;
+    top:50%;
+    left:80%;
+    margin:-13px 0 0 -130px;
+
+}
+.typepageHeadInputSearch{
+    border:0;
+    width: 236px;
+    height: 25px;
+    font-size:17.1px;
+    border-radius: 25px;
+    text-indent: 1em;
+    float:left;
+    color:rgb(143,143,143);
+    outline: none;
+}
+.typepageHeadInputbuttom{
+    border:0;
+    width:18px;
+    height:18px;
+    margin-top:4px;
+    background: url(img/小search.png) ;
+    float:left;
+    cursor: pointer
+
+}
+/*轮播图*/
+#typepageAuto  {
+    width:100%;
+    min-width: 901px;
+    height: 184px;
+    margin-top:54px;
+
+}
+ #container {
+    position: relative;
+    width: 901px;
+    height: 184px;
+    overflow: hidden;
+    margin:0 auto;
+            
+}
+
+#buttons{
+    width:180px;
+    height:15px;
+    position: absolute;
+    left:50%;
+    bottom: 5px;
+    margin:0 0 0 -68px;
+    z-index: 2;
+
+}
+#buttons span{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background:rgb(217,210,207);
+    float:left;
+    margin-right: 45px;
+    cursor: pointer;
+    box-shadow:inset 1px 1px 1px rgb(159,158,158);
+}
+#buttons .on{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background:rgb(77,73,71);
+    float:left;
+    margin-right: 45px;
+    cursor: pointer;
+
+}
+#list{
+    position: absolute;
+    z-index: 1;
+    width:4505px;
+    height: 184px;
+}
+#list div{
+    width:901px;
+    height: 184px;
+    float:left;
+
+}
+/*第一张图*/
+#list .banner1{
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+#list .banner1 p{
+    font-size: 26.58px;
+    font-family: 微软雅黑;
+    margin-top:10px;
+
+   }
+/*第二张*/
+#list .banner2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+/*第三张*/
+#list .banner3{
+    background: url(img/banner3背景.png);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+
+}
+#list .banner3 .banner3Box{
+    width:790px;
+    height:102px;
+    background: rgb(240,239,239);
+    border: 3px solid rgb(77,73,71);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+#list .banner3 .banner3Box img{
+    margin-bottom: 17px;
+}
+
+#list .banner3 .banner3Box p{
+    font-size: 24px;
+}
+/*背景图*/
+.bg1{
+    background: url(img/banner13背景.png);
+}
+.bg2{
+    background: url(img/banner2背景.png);
+}
+/*主体*/
+#typepageMainbody{
+    width:901px;
+    margin:0 auto;
+    height:1000px;
+    
+
+   
+}
+/*导航栏*/
+#mainbodyTop{
+    padding-top:15px; 
+    width:100%;
+    height:48px;
+    border-bottom: 1px solid rgb(216,216,216);
+  
+    
+}
+#mainbodyTop ul{
+    list-style:none;
+
+}
+#mainbodyTop ul li{
+    color: rgb(130,130,130);
+}
+#mainbodyTop ul li{
+    float:left;
+    line-height: 48px;
+    font-size: 14px;
+    padding-right:23px;
+    font-family: 微软雅黑；
+
+
+}
+a:link,a:visited{color:#0a0909;
+                 text-decoration:none;}
+a:hover,a:active{color:rgb(235,161,85);
+                text-decoration:none;}
+/*书部分*/
+#mainbodyBook{
+    width:100%;
+    height:835px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+#mainbodyBook .book{
+    width:201px;
+
+    
+}
+#mainbodyBook .book>img{
+     cursor: pointer;
+
+}
+.bookMsg{
+    width:104px;
+    margin:0 auto;
+    border-bottom: 1px solid rgb(217,217,217);
+ 
+ 
+ }
+.bookMsg p{
+   text-align: center;
+   font-size: 15px;
+   font-weight:bold;
+   padding-bottom:7px;
+}
+ .bookMsg img{
+  padding:10px 4px 5px 0;
+ 
+ }
+#mainbodyBook .bookMsg img[alt=""]{
+    padding-right:0px;
+}
+.threeBook{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
