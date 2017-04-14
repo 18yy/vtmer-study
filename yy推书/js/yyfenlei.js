@@ -127,26 +127,26 @@ window.onload=function(){
                 var oMask=document.createElement('div');
                 oMask.id="mask";
                 oMask.style.height=sHeight+'px';
-                oMask.style.height=sWidth+'px';
-                document.body.appendChild(oMask);
+                oMask.style.width=sWidth+'px';
+                document.body.appendChild(oMask);//创建遮罩层
 
                  oDtailpage.style.display="block";
                  oDtailpage.style.display="flex";
-                /* oDtailpage.style.width="906px";
-                 oDtailpage.style.width="900px";
-              */
+               
                
 
                }
       }
       
-      oClose.onclick=function(){
+        oClose.onclick=function(){
 
-        oDtailpage.style.display="none";
-        document.body.removeChild(oMask);
+            var oMask=document.getElementById('mask');
+           oDtailpage.style.display="none";
+           document.body.removeChild(oMask);
 
-      }
-//4.14.....
+        }
+//4.14.第二周作业
+//完成分类详情
 
 
      
