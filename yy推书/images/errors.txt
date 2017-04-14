@@ -1,0 +1,1 @@
+[2017-04-12 13:18:58] layer "banner+": Expected end of input but "+" found.

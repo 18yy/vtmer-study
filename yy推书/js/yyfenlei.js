@@ -109,12 +109,47 @@ window.onload=function(){
     }
 
    
+    /*详情页的出现*/
+    var oTypepage=document.getElementById('typepageWrap');
+    var aBooks=document.getElementsByClassName('book');
+    var oDtailpage=document.getElementById('typepageAlertDetails');
+    var oClose=document.getElementById('close');
     
-    
+       
+      for(i=0;i<aBooks.length;i++){
 
 
+            aBooks[i].onclick=function(){
+
+                //获取页面高度和宽度
+                var sHeight=document.documentElement.scrollHeight;
+                var sWidth=document.documentElement.scrollWidth;
+                var oMask=document.createElement('div');
+                oMask.id="mask";
+                oMask.style.height=sHeight+'px';
+                oMask.style.height=sWidth+'px';
+                document.body.appendChild(oMask);
+
+                 oDtailpage.style.display="block";
+                 oDtailpage.style.display="flex";
+                /* oDtailpage.style.width="906px";
+                 oDtailpage.style.width="900px";
+              */
+               
+
+               }
+      }
+      
+      oClose.onclick=function(){
+
+        oDtailpage.style.display="none";
+        document.body.removeChild(oMask);
+
+      }
+//4.14.....
 
 
+     
 
 
 
