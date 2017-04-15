@@ -147,12 +147,74 @@ window.onload=function(){
         }
 //4.14.第二周作业
 //完成分类详情
+  
+  /*搜索页*/
+
+  //下拉菜单过渡动画和延时
+  var oNav=document.getElementById('searchpageNav');
+  var aNavA=oNav.getElementsByTagName('a');
+  var oTypes=aNavA[0];
+  var oNavUl=document.getElementById('navUl');
+  var time=null;
+
+  //获取非行间css样式
+  function getStyle(obj,attr){ 
+    if(obj.currentStyle){  
+
+        return obj.currentStyle[attr];
+    }
+    else{
+
+        return getComputedStyle(obj,false)[attr];   //针对非ie
+    }
+}
+    //增加高度
+    function addH(){
+    var h=parseInt(getStyle(oNavUl,'height'));
+    h+=1;
+    if(h<=130){
+        oNavUl.style.height=h+'px';
+        setTimeout(addH,3);
+    }
+    else{
+        return;
+    }
+
+  }
+  //减小高度
+  function subH(){
+
+    var h=parseInt(getStyle(oNavUl,'height'));
+    h=h-1;
+    if(h>0){
+        oNavUl.style.height=h+'px';
+        setTimeout(subH,3);
+    }
+    else{
+      
+        oNavUl.style.display="none";
+
+        return;
+    }
+
+}
+
+ oNavUl.onmouseover=oTypes.onmouseover=function() {
+     clearTimeout(time);
+    oNavUl.style.display="block";
+    addH();
 
 
-     
+  }
+ 
+  oNavUl.onmouseout=oNavUl.onmouseout=function() {
+     time=setTimeout(function(){
+       subH();
+    },300);
+     //延时关闭
 
-
-
+ }
+//4.15中午，完成下拉菜单js
 
 
 

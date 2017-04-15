@@ -184,14 +184,14 @@ form{
 }
 #homepageLoginBox input[type="button"]:hover{
     color:rgb(114，116，121);
-     width: 101px;
+    width: 101px;
     height: 40px;
     border:1px solid rgb(169,171,172);
     box-shadow:inset -3px -3px 10px 1px rgb(168,170,172), 5px 4px 10px 3px rgb(224,228,229),-1px -1px 3px 1px rgb(224,228,229);
     background:rgb(207,209,211);
     border-radius: 25px;
     font-size:20px;
-   margin-left:153px;
+    margin-left:153px;
    
 }
 .homepageLoginBoxInput span a{
