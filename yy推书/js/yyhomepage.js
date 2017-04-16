@@ -58,12 +58,54 @@ window.onload=function(){
 
 
 
+/*获取页面高度和宽度*/
+      /*var sHeight=document.documentElement.scrollHeight;
+      var sWidth=document.documentElement.scrollWidth;
+      var oMask=document.createElement('div');
+      oMask.id="mask";
+      oMask.style.height=sHeight+'px';
+      oMask.style.width=sWidth+'px';
+      document.body.appendChild(oMask);*//*创建遮罩层*/
+
+       var oLoading=document.getElementById('loadingMain');
+       var aCircles=oLoading.getElementsByTagName('span');
+       var index=1;
 
 
 
 
+        function showCircles(){
 
+        for(i=0;i<aCircles.length;i++){
 
-
+          if(aCircles[i].className=='on'){
+                aCircles[i].className='';
+                break;
+            }
+             aCircles[index-1].className='on';
+       }
 
 }
+
+      function play(){
+
+        setInterval(function(){
+            if(index==3){
+                index=1;
+            }
+            else{
+            index+=1;
+        }
+            showCircles();
+
+
+        },2500);
+
+
+
+
+    }
+    play();
+};
+/*进度条还没成功4.16
+页面的链接已经写好了*/

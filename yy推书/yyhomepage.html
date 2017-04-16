@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>推书</title>
-        <link rel="stylesheet" href="css/yytuishu.css" type="text/css" />
-        <script src="js/yytuishu.js" type="text/javascript" charset="utf-8" async defer></script>
+        <title>主页</title>
+        <link rel="stylesheet" href="css/yyhomepage.css" type="text/css" />
+        <script src="js/yyhomepage.js" type="text/javascript" charset="utf-8" async defer></script>
     </head>
     <body>
         <div id="homepage">
@@ -18,15 +18,15 @@
                     <img src="images/纯logo.png" alt="logo">
                     <p>The books that know you</p>
                 </div>
-                <form class="homepageInputBox">
+                <form class="homepageInputBox" action="yysearchpage.html">
                      <input type="text"  value="搜索" class="searchInput" /> 
                      <input type="submit" value=""class="searchInputButton" />
                 </form>
                <div class="homepageType">
-                   <a href="#"><div>大类1</div></a>
-                   <a href="#"><div>大类2</div></a>
-                   <a href="#"><div>大类3</div></a>
-                   <a href="#"><div>大类4</div></a>
+                   <a href="yytypepage1.html"><div>大类1</div></a>
+                   <a href="yytypepage2.html"><div>大类2</div></a>
+                   <a href="yytypepage3.html"><div>大类3</div></a>
+                   <a href="yytypepage4.html"><div>大类4</div></a>
                </div>
             </div>
                 <div id="homepageLoginBox">
@@ -45,15 +45,12 @@
                     </div>
                     </div>
                 </div>
-            <div id="homepageLoading">
                 <div id="loadingMain">
                     <p>Loading</p>
-                    <div class="circle1"></div>
-                    <div class="circle2"></div>
-                    <div class="circle3"></div>
+                    <span class="on" inex="1"></span>
+                    <span index="2"></span>
+                    <span index="3"></span>
                 </div>
-
-            </div>
         </div>
     </body>
 </html>
