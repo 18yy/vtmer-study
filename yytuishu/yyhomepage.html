@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>主页</title>
+        <link rel="stylesheet" href="css/yyhomepage.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/small.css" />
+
+        <script src="js/yyhomepage.js" type="text/javascript" charset="utf-8" async defer></script>
+    </head>
+    <body>
+        <div id="homepage">
+
+            <a href="#" id="loginA" class="homepageLogin">
+                <img src="images/login-icon.png" alt=""id="Login-icon">
+                
+            </a>
+            <div id="homepageMain">
+                <div class="homepageLogo">                
+                    <img src="images/纯logo.png" alt="logo">
+                    <p>The books that know you</p>
+                </div>
+                <form class="homepageInputBox" action="yysearchpage.html">
+                     <input type="text"  value="搜索" class="searchInput" /> 
+                     <input type="submit" value=""class="searchInputButton" />
+                </form>
+               <div class="homepageType">
+                   <a href="yytypepage1.html"><div>大类1</div></a>
+                   <a href="yytypepage2.html"><div>大类2</div></a>
+                   <a href="yytypepage3.html"><div>大类3</div></a>
+                   <a href="yytypepage4.html"><div>大类4</div></a>
+               </div>
+            </div>
+                <div id="homepageLoginBox">
+                    <a href="#"><img src="images/close.png" id="homepageLoginClose" ></a>
+                    <div id="loginBoxMain">
+                    <img src="images/纯logo 拷贝 2.png" alt="logo">
+                    <div class="homepageLoginBoxInput">
+                    <label for="username">账号:</label>
+                        <input type="text"value="用户名"name="username" >
+                    <br/>
+                    <label for="密码">密码:</label>
+                      <input type="password" name="password">
+                    <br/>
+                    <input type="button"  value="登陆" id="homepageButton">
+                    <span><a href="#">注册</a></span>
+                    </div>
+                    </div>
+                </div>
+                <div id="loadingMain">
+                    <p>Loading</p>
+                    <span class="on" inex="1"></span>
+                    <span index="2"></span>
+                    <span index="3"></span>
+                </div>
+        </div>
+    </body>
+</html>

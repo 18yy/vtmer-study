@@ -1,0 +1,65 @@
+/*主页 */
+#homepageMain{
+    height: 500px;
+
+}
+
+form{
+   
+    width:280px;
+}
+.searchInput{
+   
+    width: 230px;
+    line-height: 37px;
+    font-size: 20px;
+}
+.homepageType div{
+    width:80px;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 3px;
+}
+#homepageLoginBox{
+    width:440px;
+    height: 450px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:-225px 0px 0px -220px;
+}
+#homepageLoginClose{
+    position: absolute;
+    top:16px;
+    left:400px;
+}
+.homepageLoginBoxInput span a{
+    margin-left: 56px;
+    font-size: 15px;
+}
+.homepageLoginBoxInput label{
+    font-size: 20px;
+    margin-right: 25px;
+}
+#homepageLoginBox input[type="button"]{
+    margin-left: 102px;
+}
+/*搜索页*/
+#searchpageHead{
+    height: 100px;
+}
+.searchpageHeadInputBox{
+    height: 40px;
+
+}
+.searchpageHeadInputSearch{
+    height: 40px;
+}
+.searchpageHeadInputbuttom{
+    margin-top:10px;
+}
+#searchpageCentre{
+    background: none;
+}
+/*为什么搜索的东西不在中间呢flex；
+*/

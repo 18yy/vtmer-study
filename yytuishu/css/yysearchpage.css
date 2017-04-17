@@ -1,0 +1,353 @@
+*{
+    padding:0;
+    margin:0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    min-width: 901px;
+
+}
+body{
+   background: rgb(244,244,244);
+   
+}
+/*上导航*/
+#searchpageHead{
+    background: rgb(255,255,255);
+    width: 100%;
+    height: 54px;
+    position:fixed;
+    z-index:99;
+    top:0;
+    box-shadow: 5px 5px 9px 2px rgb(195,195,195);
+
+}
+#searchpageHead img{
+    position: absolute;
+    top:50%;
+    left: 20%;
+    margin:-18px 0 0 -36px;
+}
+/*1搜索框*/
+.searchpageHeadInputBox{
+    width:260px;
+    height: 26px;
+    border: 1px solid rgb(166,166,166);
+    border-radius: 25px;
+    background: rgb(252,252,252);
+    position:absolute;
+    top:50%; 
+    left:50%;
+    margin:-13px 0 0 -130px;
+}
+.searchpageHeadInputSearch{
+    border:0;
+    width: 236px;
+    height: 25px;
+    font-size:17.1px;
+    border-radius: 25px;
+    text-indent: 1em;
+    float:left;
+    color:rgb(143,143,143);
+    outline: none;
+}
+.searchpageHeadInputbuttom{
+    border:0;
+    width:18px;
+    height:18px;
+    margin-top:4px;
+    background: url(img/小search.png) ;
+    float:left;
+    cursor: pointer
+
+}
+/*2分类下拉菜单*/
+#searchpageHeadNav{
+    width:84px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top:50%;
+    left:80%;
+    margin:-15px 0 0 -42px;
+    background: rgb(220,215,157);
+    border:1px solid rgb(149,147,125);
+
+}
+#searchpageHeadNav a[target]{
+    color: rgb(149,147,125);
+    display: block;
+    cursor: pointer;
+}
+#searchpageHeadNav a[target]:hover{
+    color: rgb(149,147,125);
+
+}
+
+#searchpageHeadNav ul{
+    list-style: none;
+    margin-top:0.5px;
+    padding:5px 0px;
+    background:rgb(220,215,157) ;
+    border-radius: 15px;
+    display: none;
+    overflow: hidden;
+    height: 0;
+}
+#searchpageHeadNav ul li a{
+    color: rgb(149,147,125);
+   
+
+}
+
+#searchpageHeadNav ul li a:hover{
+    color:rgb(185,164,133);
+   
+}
+/*中间栏部分*/
+#searchpageCentre{
+    width:100%;
+    margin-top:54px;
+    height: 184px;
+    background: url(img/banner13背景.png); 
+    background-repeat:no-repeat;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+
+}
+#searchpageCentreContent{
+    margin-top:50px;
+    padding-bottom: 10px;
+    padding:0px 50px 10px;
+    border-bottom: 2px solid rgb(214,214,214);
+
+
+}
+#searchpageCentreContentSearchBox{
+    padding:10px 30px;
+    background: rgb(220,215,157); 
+
+       
+
+}
+#searchpageCentreContentSearchBox p{
+    color: rgb(149,147,125);
+    font-size:17.49px;
+
+}
+/*主体部分书*/
+#searchpageMainbody{
+    width:901px;
+    height: auto;
+    margin:0 auto;
+    padding:80px 60px 0px;
+    background: white;
+}
+/*1书部分*/
+#searchpageMainbodyContent{
+    width:901px;
+    height: 835px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.book{
+    width:201px;
+}
+.book>img{
+   cursor: pointer;
+
+}
+.bookMsg{
+    width:104px;
+    margin:0 auto;
+    border-bottom: 1px solid rgb(217,217,217);
+ 
+ 
+ }
+.bookMsg p{
+   text-align: center;
+   font-size: 15px;
+   font-weight:bold;
+   padding-bottom:7px;
+}
+ .bookMsg img{
+   padding:10px 4px 5px 0;
+ 
+ }
+.bookMsg img[alt=""]{
+   padding-right:0px;
+}
+.fourBook{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/*2分页码部分*/
+#mainbodyNumber{
+    width:100%;
+    padding:20px;
+    margin-top:40px;
+
+}
+#mainbodyNumber a{
+    padding:0 6px;
+    font-size: 15px;
+    color: rgb(40,40,40);
+    text-decoration: none;
+}
+#mainbodyNumber a:hover{
+    border-radius: 50%;
+    background: rgb(68,68,68);
+    color: white;
+}
+
+#mainbodyNumber a[name]:hover{
+    background:  rgb(244,244,244);
+    color:rgb(235,161,85); 
+}
+#mainbodyNumber p{
+    font-size: 15px;
+}
+/*详情页*/
+/*1遮罩层*/
+#mask{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgb(182,179,179);
+    opacity: 0.65;
+    filter:alpha(opacity=65);
+}
+#typepageAlertDetails{
+    width:906px;
+    height:900px;
+    z-index:88;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin:0px 0px 0px -453px;
+    background: rgb(251,251,251);
+    box-shadow:2px 2px 10px rgb(180,179,179) ,-2px -2px 10px rgb(180,179,179);
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;   
+           
+}
+/*2详情页变大颜色透明度过渡*/
+@-webkit-keyframes move {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.move {
+ -webkit-animation-name:move;
+  animation-name: move;
+  animation-timing-function:ease;
+  -webkit-animation-timing-function:ease;
+  animation-duration:0.5s;
+  -webkit-animation-duration:0.5s;     
+           
+}
+
+       
+#typepageAlertDetails #close{
+    position: absolute;
+    top:0;
+    right:0;
+ } 
+
+#typepageAlertDetails .DetailsMain{
+    width:660px;
+    margin:100px 0;
+    padding:46px 60px;
+          
+}
+/*右面书名部分*/
+
+ .DetailsMainBookName{
+    width:323px;
+    height: 328px;
+    float:right;
+    padding-top:40px;
+
+}
+.DetailsMainBookNameContent{
+    width:100%;
+    height:270px;
+    margin-top:19px;
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-direction: column;
+   
+}
+/*1书名*/
+.DetailsMainBookName>p{
+    font-size: 30px;
+    text-indent: 2em;
+    
+}
+.DetailsMainBookNameContent span,p{
+    color: rgb(42,42,42);
+    font-size: 15px;
+}
+/*2图书馆藏书x楼x架xx*/
+.DetailsMainBookNameContent span p{
+    text-indent: 9em;
+}
+/*3小图标*/
+
+.DetailsMainBookNameContent img[alt]{
+    border-right: 1px solid rgb(146,146,146);
+
+}
+.DetailsMainBookNameContent img{
+    padding:0 10px;
+}
+.DetailsMainBookNameContent div div{
+    margin-top:3px;
+
+}
+.introdution{
+    margin-top:38px;
+}
+
+.introdution h4{
+    font-size: 14px;
+    color: #2a2827;
+}
+.introdution p{
+    padding:4px;
+    font-size: 12px;
+    text-indent: 3em;
+    color: #2a2827;
+}
